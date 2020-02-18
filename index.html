@@ -39,14 +39,15 @@
 					<!--tv-->
 						<button id="TVbtn" type="button" class="btn btn-default" onclick="tvbutton()">TV Issues</button>
 						<!--toggle tv options with button-->
-						
-						<!--end toggle of tv options-->
+						<!--other product scenarios buttons-->
 						<button id="BBbtn" type="button" class="btn btn-default" onclick="tvbutton()">Broadband & Talk
 							issues</button>
 						
 					<button id="prdctbtnBill" type="button" class="btn btn-default" onclick="billingCall()">Billing</button>
 					<button id="prdctbtnUpgrd" type="button" class="btn btn-default" onclick="myFunction()">Upgrade</button>
 					<button id="prdctbtnHmmove" type="button" class="btn btn-default" onclick="myFunction()">Home Move/Engineer</button>
+					<button id="prdctgenrl" type="button" class="btn btn-default" onclick="myFunction()">General enquiry</button>
+					<!--end scenario options-->
 					</div>	
 					<div id="tvshow" style="display:none;">
 							<button id="prdctbtnQ" type="button" class="btn btn-default" onclick="myFunction()">Sky Q</button>
@@ -63,6 +64,54 @@
 									onclick="bbtte()">Appointments BBTTE</button>
 								</div>				
 					</div>
+
+					<!--General Enquiry-->
+					<div id="generalenq">
+						<FORM id=FormQ method=get name=FormName action=blah.php>
+							<div class="accntholder">
+								<h3>Account Holder or Password Holder?</h3>
+								<div class="sliderWrapper">
+									<div>Account holder&nbsp;&nbsp;</div>
+									<label class="switch">
+										<input type="checkbox" class="notes" value="Account holder called in"> <span
+											class="slider round"></span>
+									</label>
+								</div>
+								<div class="sliderWrapper">
+									<div>Password holder&nbsp;&nbsp;</div>
+									<label class="switch">
+										<input type="checkbox" class="notes" value="Password holder called in"> <span
+											class="slider round"></span>
+									</label>
+								</div>
+								<div class="sliderWrapper">
+									<div>Non account holder&nbsp;&nbsp;</div>
+									<label class="switch">
+										<input type="checkbox" class="notes" value="Non account holder called in"> <span
+											class="slider round"></span>
+									</label>
+								</div>
+							</div>
+							<br>
+							<h4>General queries</h4>
+							<div class="sliderWrapper">
+								<div>Sky ID issues&nbsp;&nbsp;</div>
+								<label class="switch">
+									<input type="checkbox" class="notes" value="with issues regarding their sky ID, followed steps as reccomended by Onehelp to resolve their issue"> <span
+										class="slider round"></span>
+								</label>
+							</div>
+							<div class="sliderWrapper">
+								<div>Sky email issues&nbsp;&nbsp;</div>
+								<label class="switch">
+									<input type="checkbox" class="notes" value="with issues regarding their Sky email address, followed steps as reccomended by Onehelp to resolve their issue."> <span
+										class="slider round"></span>
+								</label>
+							</div>
+						</FORM>
+					</div>
+					<!-- end general enquiry-->
+				
 					<!--Sky Q section & troubleshooting-->
 
 				<div id="skyQ1">

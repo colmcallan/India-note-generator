@@ -13,6 +13,12 @@ $(document).ready(function () {
   });
 });
 
+//general enquiry
+$(document).ready(function () {
+  $("#prdctgenrl").click(function () {
+    $("#generalenq").toggle();
+  });
+});
 //SkyQ button
 $(document).ready(function () {
   $("#prdctbtnQ").click(function () {

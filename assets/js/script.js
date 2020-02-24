@@ -99,37 +99,22 @@ $(document).ready(function () {
     $("#playbackhd").toggle();
   });
 });
-//HD equipment issue
+//HD equipment/ondemand issue
 $(document).ready(function () {
   $("#hrdwarehd").click(function () {
     $("#equipHD").toggle();
+  });
+});
+$(document).ready(function () {
+  $("#troubleShootingequip").click(function () {
+    $("#equipHD").hide();
+    $("#TROUBLESHOOTEQUIP").toggle();
   });
 });
 //HD remote issue
 $(document).ready(function () {
   $("#remote").click(function () {
     $("#cntrl").toggle();
-  });
-});
-//Troubleshoot HD 
-$(document).ready(function () {
-  $("#troubleShootingHD").click(function () {
-    $("#TROUBLESHOOTHD").toggle();
-  });
-});
-$(document).ready(function () {
-  $("#troubleShootingHD2").click(function () {
-    $("#TROUBLESHOOTHD").toggle();
-  });
-});
-$(document).ready(function () {
-  $("#troubleShootingHD3").click(function () {
-    $("#TROUBLESHOOTHD").toggle();
-  });
-});
-$(document).ready(function () {
-  $("#troubleShootingHD4").click(function () {
-    $("#TROUBLESHOOTHD").toggle();
   });
 });
 
@@ -139,6 +124,32 @@ $(document).ready(function () {
     $("#TROUBLESHOOTHD").toggle();
   });
 });
+
+//Troubleshoot NSS
+$(document).ready(function () {
+  $("#troubleShootingnss").click(function () {
+    $("#TROUBLESHOOTNSS").toggle();
+  });
+});
+//Troubleshooting picutre/sound issues
+$(document).ready(function () {
+  $("#troublepicture").click(function () {
+    $("#pcturhd").hide();
+    $("#picturetroubleshooting").toggle();
+  });
+});
+$(document).ready(function () {
+  $("#troubleShootingrecordings").click(function () {
+    $("#TROUBLESHOOTRECORDINGS").toggle();
+  });
+});
+$(document).ready(function () {
+  $("#troubleShootingHD4").click(function () {
+    $("#TROUBLESHOOTHD").toggle();
+  });
+});
+
+
 
 //Broadband 
 $(document).ready(function () {
@@ -354,6 +365,8 @@ $(document).ready(function () {
     $('#selectedtext').val(text);
   });
 });
+
+
 
 //clear text function in texxttarea
 var input = document.querySelector('#clear');

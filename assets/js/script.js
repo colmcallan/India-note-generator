@@ -359,7 +359,7 @@ $(document).ready(function () {
   $('.notes').click(function () {
     var text = "";
     $('.notes:checked').each(function () {
-      text += $(this).val() + ',';
+      text += $(this).val() + '.\n';
     });
     text = text.substring(0, text.length - 1);
     $('#selectedtext').val(text);

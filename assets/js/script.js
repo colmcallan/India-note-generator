@@ -5,8 +5,11 @@
 //All utiliszing the jquery toggle function
 //<!--All code used in this is copyright to Colm Callan, colm.callan@sky.ie-->
 
+//hide other buttons pressed
 
-//TV show TV options button
+
+
+//TV other scenario into TV options hides other DIVS when clicked
 $(document).ready(function () {
   $("#TVbtn").click(function () {
     $("#tvshow").toggle();
@@ -52,27 +55,7 @@ $(document).ready(function () {
     $("#hardwareissuesq").toggle();
   });
 });
-//SkyQ trouebleshooting
-$(document).ready(function () {
-  $("#Qtroublesht").click(function () {
-    $("#TROUBLESHOOT").toggle();
-  });
-});
-$(document).ready(function () {
-  $("#Qtroublesht2").click(function () {
-    $("#TROUBLESHOOT").toggle();
-  });
-});
-$(document).ready(function () {
-  $("#Qtroublesht3").click(function () {
-    $("#TROUBLESHOOT").toggle();
-  });
-});
-$(document).ready(function () {
-  $("#Qtroublesht4").click(function () {
-    $("#TROUBLESHOOT").toggle();
-  });
-});
+
 //HD
 $(document).ready(function () {
   $("#prdctbtnHD").click(function () {
@@ -118,12 +101,14 @@ $(document).ready(function () {
   });
 });
 
-//troubleshooting remote
+//HD remote issue troubleshooting steps
 $(document).ready(function () {
   $("#trblshootingcntrl").click(function () {
-    $("#TROUBLESHOOTHD").toggle();
+    $("#remotecontrol").toggle();
   });
 });
+
+
 
 //Troubleshoot NSS
 $(document).ready(function () {
@@ -351,6 +336,42 @@ $(document).ready(function () {
   });
 });
 
+//OSM issues 
+$(document).ready(function () {
+  $("#OSM").click(function () {
+    $("#OSMissues").toggle();
+  });
+});
+
+//OSM ondemand 
+$(document).ready(function () {
+  $("#ondemandosm").click(function () {
+    $("#ondemandosmissue").toggle();
+  });
+});
+
+//call OSM issues 
+$(document).ready(function () {
+  $("#OSMcallus").click(function () {
+    $("#callusosm").toggle();
+  });
+});
+
+//call OSM issues 
+$(document).ready(function () {
+  $("#cardOSM").click(function () {
+    $("#viewingcardosm").toggle();
+  });
+});
+
+//Q OSM issues 
+$(document).ready(function () {
+  $("#QOSM").click(function () {
+    $("#SkyQOSMissues").toggle();
+  });
+});
+
+
 
 //End of product/resolution buttons
 
@@ -359,7 +380,7 @@ $(document).ready(function () {
   $('.notes').click(function () {
     var text = "";
     $('.notes:checked').each(function () {
-      text += $(this).val() + '.\n';
+      text += $(this).val() + '.\n \r';
     });
     text = text.substring(0, text.length - 1);
     $('#selectedtext').val(text);
